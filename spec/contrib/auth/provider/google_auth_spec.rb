@@ -15,11 +15,13 @@ RSpec.describe Contrib::Auth::Provider::GoogleAuth, provider: true do
         provider = Contrib::Auth::Provider::GoogleAuth.new(api_key, http_client)
         provider.sign_in_with_password(email, password)
 
-        expect(http_client).to have_received(:post).with('accounts:signInWithPassword') do |&block|
-          req = OpenStruct.new(params: {}, body: '{}')
+        expect(http_client).to have_received(:post).with('/v1/accounts:signInWithPassword') do |&block|
+          req = OpenStruct.new(params: {}, body: '{}', headers: {})
           block.call(req)
+
+          expect(req.headers).to eq 'Content-Type' => 'application/json'
           expect(req.params).to eq key: api_key
-          expect(req.body).to eq "{\"email\":\"#{email}\",\"password\":\"#{password}\"}"
+          expect(req.body).to eq "{\"email\":\"#{email}\",\"password\":\"#{password}\",\"returnSecureToken\":true}"
         end
       end
 
