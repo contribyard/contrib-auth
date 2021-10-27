@@ -4,3 +4,5 @@
 /pkg/
 /tmp/
 .byebug_history
+contrib-auth-*.gem
+spec/dummy/log/*
