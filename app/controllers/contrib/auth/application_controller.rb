@@ -1,6 +1,6 @@
 module Contrib
   module Auth
-    class ApplicationController < ActionController::Base
+    class ApplicationController <  ActionController::API
     end
   end
 end

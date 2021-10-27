@@ -16,4 +16,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "rails", "~> 6.1.4", ">= 6.1.4.1"
   spec.add_dependency 'faraday'
+  spec.add_dependency 'jbuilder'
 end

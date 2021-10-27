@@ -1,0 +1,106 @@
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:01:26 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as HTML
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+Completed 406 Not Acceptable in 138ms (Allocations: 11938)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:04:40 +0000
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:09:40 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as HTML
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+No template found for Contrib::Auth::AuthenticationController#sign_in_with_password, rendering head :no_content
+Completed 204 No Content in 145ms (Allocations: 13593)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:14:11 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+No template found for Contrib::Auth::AuthenticationController#sign_in_with_password, rendering head :no_content
+Completed 204 No Content in 162ms (Allocations: 13593)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:15:19 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+No template found for Contrib::Auth::AuthenticationController#sign_in_with_password, rendering head :no_content
+Completed 204 No Content in 143ms (Allocations: 13593)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:16:13 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+No template found for Contrib::Auth::AuthenticationController#sign_in_with_password, rendering head :no_content
+Completed 204 No Content in 147ms (Allocations: 13701)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:16:32 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+No template found for Contrib::Auth::AuthenticationController#sign_in_with_password, rendering head :no_content
+Completed 204 No Content in 129624ms (Allocations: 32718)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:18:51 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+No template found for Contrib::Auth::AuthenticationController#sign_in_with_password, rendering head :no_content
+Completed 204 No Content in 6192ms (Allocations: 26374)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 15:19:15 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+No template found for Contrib::Auth::AuthenticationController#sign_in_with_password, rendering head :no_content
+Completed 204 No Content in 150ms (Allocations: 13593)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:40:07 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+Completed 200 OK in 132ms (Views: 0.2ms | Allocations: 11972)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:43:27 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+Completed 200 OK in 133ms (Views: 0.2ms | Allocations: 11972)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:44:17 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as HTML
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+Completed 406 Not Acceptable in 140ms (Allocations: 11938)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:45:10 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as HTML
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+Completed 406 Not Acceptable in 144ms (Allocations: 11937)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:51:13 +0000
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:52:33 +0000
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:52:53 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as HTML
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 119ms (Allocations: 12470)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:53:14 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as HTML
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+Completed 406 Not Acceptable in 136ms (Allocations: 12468)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:54:18 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as HTML
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+Completed 406 Not Acceptable in 138ms (Allocations: 12468)
+Started POST "/auth/sign_in_with_password.json" for 127.0.0.1 at 2021-10-27 17:55:49 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+  Rendering /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder
+  Rendered /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder (Duration: 8.7ms | Allocations: 381)
+Completed 200 OK in 161ms (Views: 31.0ms | Allocations: 13005)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:56:34 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+  Rendering /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder
+  Rendered /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder (Duration: 7.2ms | Allocations: 381)
+Completed 200 OK in 167ms (Views: 29.1ms | Allocations: 13006)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:57:35 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+  Rendering /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder
+  Rendered /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder (Duration: 8.0ms | Allocations: 381)
+Completed 200 OK in 164ms (Views: 29.5ms | Allocations: 13006)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 17:57:53 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+  Rendering /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder
+  Rendered /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder (Duration: 7.8ms | Allocations: 381)
+Completed 200 OK in 164ms (Views: 28.5ms | Allocations: 13006)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 18:00:48 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+  Rendering /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder
+  Rendered /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder (Duration: 7.6ms | Allocations: 381)
+Completed 200 OK in 164ms (Views: 29.9ms | Allocations: 13006)
+Started POST "/auth/sign_in_with_password" for 127.0.0.1 at 2021-10-27 18:01:24 +0000
+Processing by Contrib::Auth::AuthenticationController#sign_in_with_password as JSON
+  Parameters: {"email"=>"nandosousafr@gmail.com", "password"=>"[FILTERED]"}
+  Rendering /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder
+  Rendered /var/gem/app/views/contrib/auth/authentication/sign_in_with_password.json.jbuilder (Duration: 7.8ms | Allocations: 381)
+Completed 200 OK in 163ms (Views: 28.1ms | Allocations: 13006)
