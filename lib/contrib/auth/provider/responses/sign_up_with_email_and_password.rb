@@ -2,7 +2,7 @@ module Contrib
   module Auth
     module Provider
       module Responses
-        class SignInWithPassword
+        class SignUpWithEmailAndPassword
           attr_accessor :id_token
           attr_accessor :refresh_token
           attr_accessor :expires_in
