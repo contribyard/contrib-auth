@@ -32,6 +32,22 @@ module Contrib
             expires_in:     parsed_response['expiresIn'],
           )
         end
+
+        # refers to: https://firebase.google.com/docs/reference/rest/auth#section-send-password-reset-email
+        def reset_password(email_or_username)
+          # TODO: X-Firebase-Locale optional header
+          response = @http_client.post('/v1/accounts:sendOobCode') do |req|
+            req.params[:key] = @api_key
+            req.headers['Content-Type'] = 'application/json'
+
+            req.body = JSON.generate(
+              email: email_or_username,
+              requestType: 'PASSWORD_RESET',
+            )
+          end
+
+          response.success?
+        end
       end
     end
   end

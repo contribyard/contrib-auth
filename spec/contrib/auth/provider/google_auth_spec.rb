@@ -43,4 +43,40 @@ RSpec.describe Contrib::Auth::Provider::GoogleAuth, provider: true do
       pending
     end
   end
+
+  describe '#reset_password' do
+    context 'when the API responds correctly' do
+      it 'builds the correct request' do
+        http_client = spy('Faraday::Connection')
+        # response body does not matter on this example.
+        allow(http_client).to receive(:post).and_return(OpenStruct.new(body: '{}'))
+
+        api_key  = SecureRandom.uuid
+        email    = 'developers@contribyard'
+
+        provider = Contrib::Auth::Provider::GoogleAuth.new(api_key, http_client)
+        provider.reset_password(email)
+
+        expect(http_client).to have_received(:post).with('/v1/accounts:sendOobCode') do |&block|
+          req = OpenStruct.new(params: {}, body: '{}', headers: {})
+          block.call(req)
+
+          expect(req.headers).to eq 'Content-Type' => 'application/json'
+          expect(req.params).to eq key: api_key
+          expect(req.body).to eq "{\"email\":\"#{email}\",\"requestType\":\"PASSWORD_RESET\"}"
+        end
+      end
+
+      it 'returns the correct response' do
+        api_key  = SecureRandom.uuid
+        email    = 'developers@contribyard'
+
+        provider = Contrib::Auth::Provider::GoogleAuth.new(api_key)
+        response = provider.reset_password(email)
+
+        expect(response).to be_truthy
+
+      end
+    end
+  end
 end

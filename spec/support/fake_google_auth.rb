@@ -5,6 +5,14 @@ class FakeGoogleAuth < Sinatra::Base
     json_response 200, 'sign_in_with_password.json'
   end
 
+  post '/v1/accounts:signUp' do
+    json_response 200, 'sign_up.json'
+  end
+
+  post '/v1/accounts:accounts:sendOobCode' do
+    json_response 200, 'reset_password.json'
+  end
+
   private
 
   def json_response(response_code, file_name)
