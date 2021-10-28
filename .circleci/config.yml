@@ -12,6 +12,7 @@ jobs:
     executor: default
     steps:
       - checkout
+      - run: sudo apt-get install libsqlite3-dev -y
       - run: bundle install -j$(nproc)
       - run:
           command: bundle exec rspec
