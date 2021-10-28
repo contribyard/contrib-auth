@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    contrib-auth (0.1.1)
+    contrib-auth (0.2.1)
       faraday
       jbuilder
       rails (~> 6.1.4, >= 6.1.4.1)
