@@ -1,0 +1,22 @@
+version: 2.1
+executors:
+  default:
+    docker:
+      - image: cimg/ruby:3.0.2
+        environment:
+            RAILS_ENV: test
+            BUNDLE_PATH: vendor/bundle
+jobs:
+  rspec:
+    executor: default
+    steps:
+      - checkout
+      - run: sudo apt-get update && sudo apt-get install libsqlite3-dev -y
+      - run: bundle install -j$(nproc)
+      - run:
+          command: bundle exec rspec
+workflows:
+  version: 2
+  main:
+    jobs:
+      - rspec
