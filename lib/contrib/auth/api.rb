@@ -18,6 +18,10 @@ module Contrib
       end
 
       def sign_up_with_email_and_password(email_or_username, password)
+        raise ArgumentError unless email_or_username
+        raise ArgumentError unless password
+
+        # TODO: ask for password confirmation
         @provider.sign_up_with_email_and_password(email_or_username, password)
       end
     end

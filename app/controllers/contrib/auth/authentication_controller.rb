@@ -15,6 +15,13 @@ module Contrib
 
         render json: {}, status: :ok
       end
+
+      def sign_up_with_email_or_username_and_password
+        @response = Contrib::Auth.api.sign_up_with_email_and_password(
+          params[:email_or_username],
+          params[:password]
+        )
+      end
     end
   end
 end
