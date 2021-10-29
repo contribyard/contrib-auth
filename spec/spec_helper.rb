@@ -29,7 +29,9 @@ Dir[File.join(ENGINE_RAILS_ROOT, "spec/support/**/*.rb")].each {|f| require f }
 RSpec.configure do |config|
   config.before(:each, provider: true) do
     stub_request(:any, /identitytoolkit.googleapis.com/).to_rack(FakeGoogleAuth)
+    stub_request(:any, /www.googleapis.com\/robot/).to_rack(FakeGoogleAuthCertificates)
   end
+
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

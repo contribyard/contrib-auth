@@ -5,6 +5,7 @@ module Contrib
     module Provider
       class GoogleAuth
         DEFAULT_BASE_ENDPOINT = 'https://identitytoolkit.googleapis.com'.freeze
+        PUBLIC_KEYS_URI       = 'https://www.googleapis.com/robot/v1/metadata/x509/securetoken@system.gserviceaccount.com'.freeze
 
         def initialize(api_key, http_client = Faraday.new(DEFAULT_BASE_ENDPOINT))
           @api_key       = api_key
@@ -69,6 +70,12 @@ module Contrib
           end
 
           response.success?
+        end
+
+        # refers to: https://firebase.google.com/docs/auth/admin/verify-id-tokens
+        def certificates
+          response = @http_client.get(PUBLIC_KEYS_URI)
+          JSON.parse(response.body)
         end
       end
     end

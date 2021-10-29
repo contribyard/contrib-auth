@@ -24,6 +24,10 @@ module Contrib
         # TODO: ask for password confirmation
         @provider.sign_up_with_email_and_password(email_or_username, password)
       end
+
+      def certificates
+        @provider.certificates
+      end
     end
   end
 end

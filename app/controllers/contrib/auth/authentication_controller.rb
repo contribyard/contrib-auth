@@ -22,6 +22,10 @@ module Contrib
           params[:password]
         )
       end
+
+      def certificates
+        render json: Contrib::Auth.api.certificates, status: :ok
+      end
     end
   end
 end
