@@ -7,6 +7,14 @@ module Contrib
           params[:password]
         )
       end
+
+      def reset_password
+        @response = Contrib::Auth::api.reset_password(
+          params[:email_or_username]
+        )
+
+        render json: {}, status: :ok
+      end
     end
   end
 end

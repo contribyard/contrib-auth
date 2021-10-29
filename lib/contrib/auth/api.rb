@@ -6,7 +6,10 @@ module Contrib
       end
 
       def sign_in_with_password(email_or_username, password)
+        raise ArgumentError unless email_or_username
+        raise ArgumentError unless password
         # TODO: Implement retryable
+        # TODO: Validate incoming attributes
         @provider.sign_in_with_password(email_or_username, password)
       end
 
