@@ -23,6 +23,14 @@ module Contrib
         )
       end
 
+      def change_password
+        @response = Contrib::Auth.api.change_password(
+          params[:id_token],
+          params[:password],
+          params[:password_confirmation],
+        )
+      end
+
       def certificates
         render json: Contrib::Auth.api.certificates, status: :ok
       end

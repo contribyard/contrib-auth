@@ -25,6 +25,12 @@ module Contrib
         @provider.sign_up_with_email_and_password(email_or_username, password)
       end
 
+      def change_password(id_token, password, password_confirmation)
+        raise ArgumentError unless password == password_confirmation
+
+        @provider.change_password(id_token, password)
+      end
+
       def certificates
         @provider.certificates
       end

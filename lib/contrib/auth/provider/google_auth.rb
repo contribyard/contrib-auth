@@ -77,6 +77,28 @@ module Contrib
           response = @http_client.get(PUBLIC_KEYS_URI)
           JSON.parse(response.body)
         end
+
+        def change_password(id_token, password)
+          response = @http_client.post('/v1/accounts:update') do |req|
+            req.params[:key] = @api_key
+            req.headers['Content-Type'] = 'application/json'
+
+            req.body = JSON.generate(
+              idToken: id_token,
+              password: password,
+              returnSecureToken: true,
+            )
+          end
+
+          parsed_response = JSON.parse(response.body)
+
+          Contrib::Auth::Provider::Responses::ChangePassword.new(
+            id_token:       parsed_response['idToken'],
+            refresh_token:  parsed_response['refreshToken'],
+            expires_in:     parsed_response['expiresIn'],
+            email:          parsed_response['email'],
+          )
+        end
       end
     end
   end

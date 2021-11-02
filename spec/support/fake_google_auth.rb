@@ -13,6 +13,10 @@ class FakeGoogleAuth < Sinatra::Base
     json_response 200, 'reset_password.json'
   end
 
+  post '/v1/accounts:update' do
+    json_response 200, 'change_password.json'
+  end
+
   private
 
   def json_response(response_code, file_name)
